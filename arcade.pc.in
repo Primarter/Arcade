@@ -1,0 +1,19 @@
+prefix=@CMAKE_INSTALL_PREFIX@
+exec_prefix=@CMAKE_INSTALL_PREFIX@
+libdir=${exec_prefix}/@CMAKE_INSTALL_LIBDIR@
+includedir=${prefix}/@CMAKE_INSTALL_INCLUDEDIR@
+
+Name: @PROJECT_NAME@
+Description: @PROJECT_DESCRIPTION@
+
+Requires:
+Libs: -L${libdir} -lmylib
+Cflags: -I${includedir}
+
+# include(GNUInstallDirs)
+# configure_file(arcade.pc.in arcade.pc @ONLY)
+# install(TARGETS foo
+#     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
+#     PUBLIC_HEADER DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
+# install(FILES ${CMAKE_BINARY_DIR}/arcade.pc
+#     DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/pkgconfig)
