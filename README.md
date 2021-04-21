@@ -120,6 +120,8 @@ Member by member:
 
 ### *Testing a game or a library*
 
+- If you chose to develop outside of the project, you should compile your game or lib and move or copy them into the `./lib` directory so that the Core can detect them.
+
 - Testing a game is fairly simple: choose one of the available libraries and launch.
 
 - Testing a library might be more hard if you stick with the available games. You should go to the [CMakeLists.txt file](./CMakeLists.txt) and uncomment the test_game target. This will allow the sample test game to compile and you'll be able to test your library.
