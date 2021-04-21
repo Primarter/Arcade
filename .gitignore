@@ -1,0 +1,11 @@
+*.o
+a.out
+*.test*
+*.so
+.vscode
+build
+arcade
+arcade.pc.in
+arcade.pc
+lib/*
+resources/scores/*
